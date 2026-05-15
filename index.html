@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purushottama Adhika Masa Presentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+        :root {
+            --saffron: #E26D24;
+            --deep-red: #8B2500;
+            --cream: #FFFDF4;
+            --text-dark: #3E2723;
+            --card-bg: #FFFFFF;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora', serif;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            scrollbar-width: none; 
+        }
+
+        .presentation-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .presentation-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+            padding: 2rem 5%;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(var(--saffron) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.04;
+            z-index: -1;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--deep-red);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(139, 37, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--saffron);
+        }
+
+        p, ul, li {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1.5rem;
+            padding-left: 2.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: '🪷';
+            position: absolute;
+            left: 0;
+            color: var(--saffron);
+            font-size: 1.2rem;
+            top: 6px;
+        }
+
+        .acronym-letter {
+            color: var(--deep-red);
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        .ornament {
+            font-size: 2.5rem;
+            color: var(--saffron);
+            margin: 1.5rem 0;
+        }
+
+        .content-box {
+            background: var(--card-bg);
+            padding: 4rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(139, 37, 0, 0.06);
+            border-top: 6px solid var(--saffron);
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .nav-hint {
+            position: absolute;
+            bottom: 30px;
+            font-size: 1.2rem;
+            color: var(--saffron);
+            opacity: 0.8;
+            animation: bounce 2s infinite;
+            font-family: 'Cinzel', serif;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        @media (max-width: 1024px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            p, ul, li { font-size: 1.4rem; }
+            .acronym-letter { font-size: 1.6rem; }
+            .content-box { padding: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container" id="presentation">
+        
+        <!-- SLIDE 1: Title -->
+        <div class="slide">
+            <div class="content-box" style="text-align: center;">
+                <div class="ornament">🪷</div>
+                <h1>Purushottama Adhika Masa</h1>
+                <h2>Things to be followed during this sacred month</h2>
+                <div class="ornament">🪷</div>
+            </div>
+            <div class="nav-hint">Use Arrow Keys to Navigate ↓</div>
+        </div>
+
+        <!-- SLIDE 2: P - U - R -->
+        <div class="slide">
+            <div class="content-box">
+                <h2 style="text-align: center;">P - U - R</h2>
+                <ul>
+                    <li><span class="acronym-letter">P – Prayers:</span><br> For inner purification, recite the prayers of Lord Brahmā (Canto 10, Chapter 14).</li>
+                    <li><span class="acronym-letter">U – Upgrade Our Chanting:</span><br> Improve the quality of your chanting and, where possible, increase the number of rounds.</li>
+                    <li><span class="acronym-letter">R – Recitation:</span><br> Regularly recite Chapter 15 of the Bhagavad Gītā.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: U - S -->
+        <div class="slide">
+            <div class="content-box">
+                <h2 style="text-align: center;">U - S</h2>
+                <ul>
+                    <li><span class="acronym-letter">U – Utsāha (Enthusiasm):</span><br> Perform all services with sincerity and joyful enthusiasm.</li>
+                    <li><span class="acronym-letter">S – Study Scriptures:</span><br> Study Śrīmad Bhāgavatam and Bhagavad Gītā (especially Chapter 15). Sing bhajans glorifying Śrī Śrī Rādhā and Kṛṣṇa (such as Yugalāṣṭakam and Chorāṣṭakam).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: H - O -->
+        <div class="slide">
+            <div class="content-box">
+                <h2 style="text-align: center;">H - O</h2>
+                <ul>
+                    <li><span class="acronym-letter">H – Holy Dhāmas:</span><br> Visit sacred dhāmas and bathe in holy rivers. If not possible, remember and chant the name of Mother Gaṅgā before bathing.</li>
+                    <li><span class="acronym-letter">O – Offerings:</span><br> Offer a ghee lamp to Śrīmatī Rādhārāṇī and Lord Kṛṣṇa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: T - T -->
+        <div class="slide">
+            <div class="content-box">
+                <h2 style="text-align: center;">T - T</h2>
+                <ul>
+                    <li><span class="acronym-letter">T – Tapasya (Austerity):</span><br> Wake early and perform Maṅgala-ārati during Brahma-muhūrta.</li>
+                    <li><span class="acronym-letter">T – Teaching & Sharing:</span><br> Share the glories of Purushottama Māsa with others and encourage them to observe this sacred vrata.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: A - M - A -->
+        <div class="slide">
+            <div class="content-box">
+                <h2 style="text-align: center;">A - M - A</h2>
+                <ul>
+                    <li><span class="acronym-letter">A – Association of Devotees:</span><br> Attend weekly classes and spiritual gatherings regularly.</li>
+                    <li><span class="acronym-letter">M – Mercy Through Charity:</span><br> Engage in charity and acts of kindness as an offering of devotion.</li>
+                    <li><span class="acronym-letter">A – Avoid:</span><br> Avoid bad association and unnecessary or unproductive talk.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: Conclusion -->
+        <div class="slide">
+            <div class="content-box" style="text-align: center;">
+                <div class="ornament">🪷</div>
+                <p style="text-align: center; font-size: 2rem; color: var(--deep-red); margin: 2rem 0; font-weight: 500;">
+                    Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare<br>
+                    Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare
+                </p>
+                <div class="ornament">🪷</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const container = document.getElementById('presentation');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        document.addEventListener('keydown', (e) => {
+            if (['ArrowDown', 'ArrowRight', 'PageDown', ' '].includes(e.key)) {
+                e.preventDefault();
+                if (currentSlide < slides.length - 1) currentSlide++;
+                slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+            } 
+            else if (['ArrowUp', 'ArrowLeft', 'PageUp'].includes(e.key)) {
+                e.preventDefault();
+                if (currentSlide > 0) currentSlide--;
+                slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        
+        container.addEventListener('scroll', () => {
+            const slideHeight = slides[0].offsetHeight;
+            currentSlide = Math.round(container.scrollTop / slideHeight);
+        });
+    </script>
+</body>
+</html>
