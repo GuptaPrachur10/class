@@ -58,8 +58,8 @@
         }
 
         .image-container img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;
+            height: 100%;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
             object-fit: cover;
@@ -73,18 +73,18 @@
         }
 
         h1 { font-size: 5rem; margin-bottom: 0.5rem; line-height: 1.1; }
-        h2 { font-size: 3.5rem; border-bottom: 4px solid #f39c12; display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 3.2rem; border-bottom: 4px solid #f39c12; display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
 
         /* Bullet Points & Text */
         ul { list-style-type: none; padding-left: 0; }
-        ul li { font-size: 1.8rem; margin-bottom: 1.2rem; font-weight: 700; display: flex; align-items: center; }
+        ul li { font-size: 1.7rem; margin-bottom: 1rem; font-weight: 700; display: flex; align-items: center; }
         ul li::before { content: '🕉️'; margin-right: 15px; color: #d35400; font-size: 1.5rem; }
         
-        .abcde-list li { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .abcde-list li { font-size: 2.2rem; margin-bottom: 1.2rem; }
         .abcde-list span { color: #b71c1c; font-size: 2.8rem; font-family: 'Cinzel', serif; margin-right: 10px; }
 
-        .flow-text { font-size: 2rem; font-weight: 700; color: #b71c1c; text-align: center; line-height: 1.8; }
-        .arrow { color: #f39c12; font-size: 2rem; }
+        .flow-text { font-size: 2.2rem; font-weight: 700; color: #b71c1c; text-align: center; line-height: 1.6; }
+        .arrow { color: #f39c12; font-size: 2.5rem; display: block; margin: 10px 0; }
 
         /* Shloka Box */
         .shloka {
@@ -97,7 +97,7 @@
         }
 
         .shloka-sanskrit { color: #d35400; font-weight: 700; font-size: 1.4rem; font-style: italic; margin-bottom: 0.8rem; }
-        .shloka-translation { color: #2c3e50; font-size: 1.3rem; }
+        .shloka-translation { color: #2c3e50; font-size: 1.3rem; font-weight: bold; }
 
         /* Mantra Text */
         .mantra {
@@ -135,37 +135,34 @@
             .image-container { display: none; }
             h1 { font-size: 3.5rem; }
             h2 { font-size: 2.5rem; }
-            ul li, .abcde-list li { font-size: 1.5rem; justify-content: center; }
+            ul li, .abcde-list li { font-size: 1.4rem; text-align: left; }
             .mantra { font-size: 2.2rem; }
+            .flow-text { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Slide 1: Title -->
     <div class="slide" id="slide1">
         <div class="content">
             <h1>Mind<br>Management</h1>
             <h3 style="font-size: 2rem; color: #d35400;">A Spiritual Perspective</h3>
-            <p style="font-size: 1.5rem; margin-top: 2rem;">Transforming the mind from an enemy into a friend.</p>
+            <p style="font-size: 1.5rem; margin-top: 2rem; font-weight: bold;">Transforming the mind from an enemy into a friend.</p>
         </div>
         <div class="image-container">
-            <!-- Reliable Unsplash Nature/Lotus Image -->
-            <img src="https://images.unsplash.com/photo-1464692805480-a69dfaaf715e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lotus Flower">
+            <img src="https://picsum.photos/id/110/800/800" alt="Peaceful Serenity">
         </div>
         <a href="#slide2" class="scroll-hint">↓</a>
     </div>
 
-    <!-- Slide 2: Nature of the Mind -->
     <div class="slide" id="slide2">
         <div class="image-container">
-            <!-- Reliable Ocean/Waves Image -->
-            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Turbulent Waves">
+            <img src="https://picsum.photos/id/124/800/800" alt="Turbulent Waves">
         </div>
         <div class="content">
             <h2>The Restless Mind</h2>
             <ul>
-                <li>Restless</li>
+                <li>Restless & Unsteady</li>
                 <li>Turbulent</li>
                 <li>Obstinate</li>
                 <li>Very Strong</li>
@@ -176,31 +173,70 @@
                     vāyor iva su-duṣkaram
                 </div>
                 <div class="shloka-translation">
-                    "To subdue the mind is more difficult than controlling the wind."<br>
-                    <strong>— BG 6.34</strong>
+                    "To subdue the mind is more difficult than controlling the wind." (BG 6.34)
                 </div>
             </div>
         </div>
         <a href="#slide3" class="scroll-hint">↓</a>
     </div>
 
-    <!-- Slide 3: The Root Cause -->
     <div class="slide" id="slide3">
         <div class="content" style="max-width: 100%;">
             <h2 style="text-align: center; display: block; border: none;">The Downward Spiral</h2>
             <div class="flow-text">
-                Contemplating Sense Objects <br> <span class="arrow">↓</span> <br>
-                Attachment <br> <span class="arrow">↓</span> <br>
-                Lust (Unfulfilled Desires) <br> <span class="arrow">↓</span> <br>
-                Anger <br> <span class="arrow">↓</span> <br>
+                Contemplating Sense Objects
+                <span class="arrow">↓</span>
+                Attachment Develops
+                <span class="arrow">↓</span>
+                Lust (Unfulfilled Desires)
+                <span class="arrow">↓</span>
+                Anger Arises
+                <span class="arrow">↓</span>
                 Delusion & Loss of Intelligence
             </div>
         </div>
         <a href="#slide4" class="scroll-hint">↓</a>
     </div>
 
-    <!-- Slide 4: The ABCDE Solution -->
     <div class="slide" id="slide4">
+        <div class="content">
+            <h2>The Greatest Enemy</h2>
+            <p style="font-size: 1.4rem; margin-bottom: 1.5rem;"><strong>Effects of an Uncontrolled Mind:</strong></p>
+            <ul>
+                <li>Impure consciousness</li>
+                <li>Filled with lust, anger, and greed</li>
+                <li>Leads to bad habits & addictions</li>
+                <li>Causes unethical behavior</li>
+                <li>Creates enmity with others</li>
+                <li>Results in deep frustration</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="https://picsum.photos/id/137/800/800" alt="Darkness and Confusion">
+        </div>
+        <a href="#slide5" class="scroll-hint">↓</a>
+    </div>
+
+    <div class="slide" id="slide5">
+        <div class="image-container">
+            <img src="https://picsum.photos/id/119/800/800" alt="Light and Clarity">
+        </div>
+        <div class="content">
+            <h2>The Best Friend</h2>
+            <p style="font-size: 1.4rem; margin-bottom: 1.5rem;"><strong>Benefits of a Controlled Mind:</strong></p>
+            <ul>
+                <li>Sharp focus & clarity</li>
+                <li>Emotional control</li>
+                <li>Deep inner peace</li>
+                <li>Equipoised in success and failure</li>
+                <li>Freedom from fear and anger</li>
+                <li>Realization of our true spiritual self</li>
+            </ul>
+        </div>
+        <a href="#slide6" class="scroll-hint">↓</a>
+    </div>
+
+    <div class="slide" id="slide6">
         <div class="content">
             <h2>The Solution</h2>
             <ul class="abcde-list">
@@ -212,32 +248,33 @@
             </ul>
         </div>
         <div class="image-container">
-            <!-- Reliable Path/Forest Image -->
-            <img src="https://images.unsplash.com/photo-1470071131384-001b85755b36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forest Path">
+            <img src="https://picsum.photos/id/1018/800/800" alt="Path to Wisdom">
         </div>
-        <a href="#slide5" class="scroll-hint">↓</a>
+        <a href="#slide7" class="scroll-hint">↓</a>
     </div>
 
-    <!-- Slide 5: Two Principles -->
-    <div class="slide" id="slide5">
+    <div class="slide" id="slide7">
         <div class="image-container">
-            <!-- Reliable Sunrise/Mountain Image -->
-            <img src="https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sunrise">
+            <img src="https://picsum.photos/id/132/800/800" alt="Sunrise Awakening">
         </div>
         <div class="content">
             <h2>Two Key Principles</h2>
             <br>
             <ul>
-                <li><strong>1. Detachment (Vairagya)</strong><br> Stepping back from lower tastes and distractions.</li>
+                <li><strong>1. Detachment (Vairagya)</strong><br> Withdrawing senses from lower tastes.</li>
                 <br>
-                <li><strong>2. Engagement (Abhyasa)</strong><br> Connecting the senses to a higher, spiritual taste.</li>
+                <li><strong>2. Practice (Abhyasa)</strong><br> Engaging the mind in a higher, spiritual taste.</li>
             </ul>
+            <div class="shloka" style="margin-top: 2rem;">
+                <div class="shloka-translation">
+                    "It is possible by suitable practice and by detachment." (BG 6.35)
+                </div>
+            </div>
         </div>
-        <a href="#slide6" class="scroll-hint">↓</a>
+        <a href="#slide8" class="scroll-hint">↓</a>
     </div>
 
-    <!-- Slide 6: The Ultimate Shelter -->
-    <div class="slide" id="slide6">
+    <div class="slide" id="slide8">
         <div class="content" style="max-width: 90%; text-align: center;">
             <h2 style="border: none;">The Ultimate Shelter</h2>
             <p style="font-size: 1.8rem; font-style: italic; margin-bottom: 3rem;">Chant and be happy.</p>
